@@ -9,3 +9,12 @@ Individual players will benefit by having the barrier to entry of competitive pl
 It till be very simple to use, just run the app in terminal and access the features selecting intuitive menu options with a combination of enter and arrow keys. Any data entry required will be done so via the keyboard and will have clear prompts when required. There will also be flags for on launch commands that offer more powerful features like mass player entry from a single formatted text file. or to print all players info record to the screen to peruse like contact cards. By default it will show the menus.
 
 <a name="myfootnote1">§</a>: *Overwatch is played with team of six player, there are three roles: Tank, Damage and Support. A team has two of each Role.*
+
+##Features
+######////// Create a database of Players
+Generating a database of players is crucial. This will be implemented by storing a large hash of Player Class objects that will include variables that represent there current game statistics, team position preferences and history of tournaments logged with the app. This information will be prompted from the player with a list of menus that will either ask for menu selections or text input from the command line. Most of this information will be will be able to updated as skill rating and player preferences change but player history will be read only. It will be important that all players have a unique name in the database to access there information
+
+######////// Generate randomly assigned teams of even rated players with correct role distributions
+This function will be mostly hiden from the user. The command will be slected from a menu prompt and then using the player database the app will generate random teams. The command will loop through the database and start with players that have the highest skill rating and match them with players of simmilar skill. once all registered players have been assigned to teams it will split the teams into as many divisions that are appropriate and generate a round robi bracket. This will be implemented with two Classes, Team and Event. These will be logged in a database of past events of the purpose of longterm tracking of statistics Errors that will ned to be hanndled include not having an exact amount of players and not having enough players of a certain skill rating to create evenly distruted teams.
+
+######////// Generate a round robin bracket and log outcomes of tournament with generated teams
