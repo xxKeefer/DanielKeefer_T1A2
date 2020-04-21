@@ -56,8 +56,12 @@ class Player
   end
 
   def get_role_pref
-    self.roles[:preferred] = @@user.select("What is your PREFERRED role?", self.roles[:options])
-    self.roles[:second] = @@user.select("If you can't play #{self.roles[:preferred]}, what would you play?", self.roles[:options].reject {|c| c == self.roles[:preferred]})
+    self.roles[:preferred] = @@user.select(
+      "What is your PREFERRED role?",
+       self.roles[:options])
+    self.roles[:second] = @@user.select(
+      "If you can't play #{self.roles[:preferred]}, what would you play?",
+       self.roles[:options].reject {|c| c == self.roles[:preferred]})
   end
 
   def get_sr(role)
@@ -84,15 +88,17 @@ class Player
     summary = Text::Table.new
     summary.head = ["Player Card", self.id, "AKA: #{self.name}"]
     summary.rows =[]
-    roles_arr = ["Tank: #{self.roles[:tank]}SR", "Damage: #{self.roles[:damage]}SR", "Support: #{self.roles[:support]}SR"]
+    roles_arr = ["Tank: #{self.roles[:tank]}SR",
+      "Damage: #{self.roles[:damage]}SR",
+      "Support: #{self.roles[:support]}SR"]
 
     case self.roles[:preferred]
     when "Tank"
-      roles_arr[0]= "★ " + roles_arr[0]
+      roles_arr[0]= "♥ " + roles_arr[0]
     when "Damage"
-      roles_arr[1]= "★ " + roles_arr[1]
+      roles_arr[1]= "♥ " + roles_arr[1]
     when "Support"
-      roles_arr[2]= "★ " + roles_arr[2]
+      roles_arr[2]= "♥ " + roles_arr[2]
     end
 
     case self.roles[:second]
@@ -104,24 +110,43 @@ class Player
       roles_arr[2]= "• " + roles_arr[2]
     end
     summary.rows.push(roles_arr)
-    summary.foot = ["Symbol Meaning", "★ - Preferred Role", "• - Second Pick"]
+    summary.foot = ["Symbol Meaning", "♥ - Preferred Role", "• - Second Pick"]
     summary.align_column(2,:center)
     puts summary.to_s
     endorse = Text::Table.new
     endorse.rows = []
-    endorse.rows.push(["[COMENDATIONS]---", "Singles", "Five Commends"])
-    endorse.rows.push(["Punctuality", "• "*self.dossier[:endorsed][:punctual].modulo(5), "★ "*(self.dossier[:endorsed][:punctual]/5)])
-    endorse.rows.push(["High Skill", "• "*self.dossier[:endorsed][:high_skill].modulo(5), "★ "*(self.dossier[:endorsed][:high_skill]/5)])
-    endorse.rows.push(["Positivity", "• "*self.dossier[:endorsed][:positive].modulo(5), "★ "*(self.dossier[:endorsed][:positive]/5)])
+    endorse.rows.push(["[COMENDATIONS]", "="*15, "Singles", "Tens"])
+    endorse.rows.push(["Total: #{self.dossier[:endorsed][:punctual]}",
+      "Punctuality",
+      "• "*self.dossier[:endorsed][:punctual].modulo(5),
+      "• "*(self.dossier[:endorsed][:punctual]/5)])
+    endorse.rows.push(["Total: #{self.dossier[:endorsed][:high_skill]}",
+      "High Skill",
+      "• "*self.dossier[:endorsed][:high_skill].modulo(5),
+      "• "*(self.dossier[:endorsed][:high_skill]/5)])
+    endorse.rows.push(["Total: #{self.dossier[:endorsed][:positivity]}",
+      "Positivity",
+      "• "*self.dossier[:endorsed][:positive].modulo(5),
+      "• "*(self.dossier[:endorsed][:positive]/5)])
 
-    endorse.rows.push(["[REPORTED FOR]---", "-"*3, "-"*3])
-    endorse.rows.push(["Forfeits", "• "*self.dossier[:reported][:forfeits].modulo(5), "★ "*(self.dossier[:reported][:forfeits]/5)])
-    endorse.rows.push(["Low Skill", "• "*self.dossier[:reported][:low_skill].modulo(5), "★ "*(self.dossier[:reported][:low_skill]/5)])
-    endorse.rows.push(["Toxicity", "• "*self.dossier[:reported][:toxicity].modulo(5), "★ "*(self.dossier[:reported][:toxicity]/5)])
+    endorse.rows.push(["[REPORTED FOR]", "="*15, "Singles", "Tens"])
+    endorse.rows.push(["Total: #{self.dossier[:reported][:forfeits]}",
+      "Forfeits",
+      "• "*self.dossier[:reported][:forfeits].modulo(5),
+      "• "*(self.dossier[:reported][:forfeits]/10)])
+    endorse.rows.push(["Total: #{self.dossier[:reported][:low_skill]}",
+      "Low Skill",
+      "• "*self.dossier[:reported][:low_skill].modulo(5),
+      "• "*(self.dossier[:reported][:low_skill]/10)])
+    endorse.rows.push(["Total: #{self.dossier[:reported][:toxicity]}",
+      "Toxicity",
+      "• "*self.dossier[:reported][:toxicity].modulo(5),
+      "• "*(self.dossier[:reported][:toxicity]/10)])
 
   endorse.align_column(1, :right)
-  endorse.align_column(2, :left)
+  endorse.align_column(2, :center)
   endorse.align_column(3, :left)
+  endorse.align_column(4, :left)
   puts endorse.to_s
   puts "#"*90
 
