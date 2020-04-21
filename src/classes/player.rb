@@ -1,5 +1,7 @@
 
 require "tty-prompt"
+require 'text-table'
+require "colorize"
 
 class Player
   @@user = TTY::Prompt.new
@@ -63,6 +65,66 @@ class Player
       q.required true
       q.in("1-5000")
     end
+  end
+
+  def update_dossier
+    choices = self.dossier[:endorsed].keys + self.dossier[:reported].keys
+    updates = @@user.multi_select("Endorse / Report #{self.name} for:", choices)
+    for v in updates
+      if self.dossier[:endorsed].has_key?(v)
+        self.dossier[:endorsed][v]+=1
+      elsif self.dossier[:reported].has_key?(v)
+        self.dossier[:reported][v]+=1
+      end
+      puts "#{self.name}'s Dossier Updated!'"
+    end
+  end
+
+  def print_info
+    summary = Text::Table.new
+    summary.head = ["Player Card", self.id, "AKA: #{self.name}"]
+    summary.rows =[]
+    roles_arr = ["Tank: #{self.roles[:tank]}SR", "Damage: #{self.roles[:damage]}SR", "Support: #{self.roles[:support]}SR"]
+
+    case self.roles[:preferred]
+    when "Tank"
+      roles_arr[0]= "★ " + roles_arr[0]
+    when "Damage"
+      roles_arr[1]= "★ " + roles_arr[1]
+    when "Support"
+      roles_arr[2]= "★ " + roles_arr[2]
+    end
+
+    case self.roles[:second]
+    when "Tank"
+      roles_arr[0]= "• " + roles_arr[0]
+    when "Damage"
+      roles_arr[1]= "• " + roles_arr[1]
+    when "Support"
+      roles_arr[2]= "• " + roles_arr[2]
+    end
+    summary.rows.push(roles_arr)
+    summary.foot = ["Symbol Meaning", "★ - Preferred Role", "• - Second Pick"]
+    summary.align_column(2,:center)
+    puts summary.to_s
+    endorse = Text::Table.new
+    endorse.rows = []
+    endorse.rows.push(["[COMENDATIONS]---", "Singles", "Five Commends"])
+    endorse.rows.push(["Punctuality", "• "*self.dossier[:endorsed][:punctual].modulo(5), "★ "*(self.dossier[:endorsed][:punctual]/5)])
+    endorse.rows.push(["High Skill", "• "*self.dossier[:endorsed][:high_skill].modulo(5), "★ "*(self.dossier[:endorsed][:high_skill]/5)])
+    endorse.rows.push(["Positivity", "• "*self.dossier[:endorsed][:positive].modulo(5), "★ "*(self.dossier[:endorsed][:positive]/5)])
+
+    endorse.rows.push(["[REPORTED FOR]---", "-"*3, "-"*3])
+    endorse.rows.push(["Forfeits", "• "*self.dossier[:reported][:forfeits].modulo(5), "★ "*(self.dossier[:reported][:forfeits]/5)])
+    endorse.rows.push(["Low Skill", "• "*self.dossier[:reported][:low_skill].modulo(5), "★ "*(self.dossier[:reported][:low_skill]/5)])
+    endorse.rows.push(["Toxicity", "• "*self.dossier[:reported][:toxicity].modulo(5), "★ "*(self.dossier[:reported][:toxicity]/5)])
+
+  endorse.align_column(1, :right)
+  endorse.align_column(2, :left)
+  endorse.align_column(3, :left)
+  puts endorse.to_s
+  puts "#"*90
+
   end
 
 end
