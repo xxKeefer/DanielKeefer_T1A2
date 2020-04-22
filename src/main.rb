@@ -3,6 +3,9 @@ require "yaml"
 require 'faker'
 
 require_relative "./classes/player.rb"
+require_relative "./classes/event.rb"
+require_relative "./mod/util.rb"
+include Util
 
 menu = TTY::Prompt.new
 
@@ -17,11 +20,7 @@ until quit
        "Quit"])
 
   when "Player Management"
-    if !(File.exists?("./db/player_db.yml"))
-      player_db = File.new("./db/player_db.yml", "w")
-      player_db.puts YAML.dump({})
-      player_db.close
-    end
+    Util.initialize_db("player")
     while true
 
        case menu.select("Player Management Menu",
@@ -31,7 +30,7 @@ until quit
             "Back to Main Menu"])
 
        when "Create / Edit Player"
-         player_db = YAML.load(File.read("./db/player_db.yml"))
+         player_db = Util.load_db("player")
          new_user = Player.new()
          new_user.registration
          if player_db.has_key?(new_user.id)
@@ -72,36 +71,36 @@ until quit
     end
 
   when "Event Management"
-    puts "event management under construction"
+    Util.initialize_db("event")
+    while true
+      case menu.select("Event Management Menu",
+        ["Create Event",
+          "View Archive",
+          "Back to Main Menu"])
+      when "Create Event"
+        new_event = Event.new(Util.load_db("player"))
+        new_event.generate_event
+      when "View Archive"
+        p "temp"
+
+      else
+        break
+      end
+    end
+
 
   when "[Dev] Populate DB"
-    if menu.yes?("Destroy Curent DB and Populate with 200 random Fake players?")
+    if menu.yes?("Destroy Curent DB and Populate with random Fake players?")
       if menu.yes?("Are you really super dooper sure?") do |q|
         q.default false
         q.positive 'y' #'really super dooper sure'
         q.negative 'No, go back please'
       end
 
-      player_db = {}
-      200.times do
-        fake_user = Player.new()
-        fake_user.name = "#{Faker::Creature::Animal.name.capitalize}#{Faker::Hacker.verb.capitalize}".split(/ /).join
-        fake_user.id =fake_user.name+"##{rand(1000..9999)}"
-        fake_pref = fake_user.roles[:options].shuffle
-        fake_user.roles[:preferred] = fake_pref.pop
-        fake_user.roles[:second] = fake_pref.pop
-        fake_user.roles[:tank] = rand(500..4600)
-        fake_user.roles[:damage] = rand(500..4600)
-        fake_user.roles[:support] = rand(500..4600)
-        fake_user.dossier[:endorsed][:punctual] = rand(0..50)
-        fake_user.dossier[:endorsed][:high_skill] = rand(0..50)
-        fake_user.dossier[:endorsed][:positivity] = rand(0..50)
-        fake_user.dossier[:reported][:forfeits] = rand(0..50)
-        fake_user.dossier[:reported][:low_skill] = rand(0..50)
-        fake_user.dossier[:reported][:toxicity] = rand(0..50)
-        player_db[fake_user.id] = fake_user
-      end
-      File.write("./db/player_db.yml", YAML.dump(player_db))
+        number_of_fakes = menu.ask("How many FAKE PLAYERS? 1 - 1000") do |q|
+          q.in("1-1000")
+        end
+        Util.populate(number_of_fakes.to_i)
 
       else
         puts "Phew! That was close!"

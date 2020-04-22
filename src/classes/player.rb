@@ -1,7 +1,6 @@
 
 require "tty-prompt"
 require 'text-table'
-require "colorize"
 
 class Player
   @@user = TTY::Prompt.new
