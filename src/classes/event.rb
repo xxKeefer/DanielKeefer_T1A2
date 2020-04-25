@@ -5,6 +5,7 @@ require 'faker'
 
 require_relative "./player.rb"
 require_relative "./team.rb"
+require_relative "./div.rb"
 require_relative "../mod/util.rb"
 include Util
 
@@ -15,12 +16,10 @@ class Event
     @name =""
     @date =""
     @players = players
+    @unassigned = @players.values.shuffle
     @player_count = @players.length
-    @tank = []
-    @damage = []
-    @support = []
     @teams = {}
-    @info = {}
+    @info = []
     # {
     #   :div => {
     #     :some_name => {
@@ -38,93 +37,137 @@ class Event
     when "name"
       "#{Faker::Space.constellation.capitalize}"
     when "div"
-      "#{Faker::App.name.capitalize}"
-    when "team"
-      "#{Faker::Space.moon.capitalize}" +
-      "#{Faker::Commerce.color.capitalize}"
-    else
       "#{Faker::Address.state.split(/ /).join.capitalize}" +
       "#{Faker::Hipster.word.capitalize}"
+    when "team"
+      "#{Faker::Space.moon.capitalize}" +
+      "#{Faker::Commerce.color.split(/ /).first.capitalize}"
     end
   end
 
   def generate_event
-    determine_roles(1, self.players)
-    assign_teams
-    unassigned_players = self.tank + self.damage + self.support
-    determine_roles(2, unassigned_players)
-    assign_teams
-
-    print_teams
-    puts "Total players left: #{self.tank.length + self.damage.length + self.support.length}"
-    self.tank.each { |e| puts "#{e.roles[:preferred]} | #{e.id} | #{e.roles[:second]}"  }
-    self.damage.each { |e| puts "#{e.roles[:preferred]} | #{e.id} | #{e.roles[:second]}"  }
-    self.support.each { |e| puts "#{e.roles[:preferred]} | #{e.id} | #{e.roles[:second]}"  }
+    fix_teams
+    #print_teams
+    generate_divisions
+    print_divisions
   end
 
   def print_teams
     self.teams.each_pair { |name, team| team.print_info }
+    puts "unable to find teams for following players:"
+    @unassigned.each { |e| puts "#{e.roles[:preferred]} | #{e.roles[:second]} | #{e.name}" }
   end
 
-  def determine_roles(pref, player_set)
-    self.tank = []
-    self.damage = []
-    self.support = []
-    case pref
-    when 1
-      pref = :preferred
-    when 2
-      pref = :second
-    else
-      pref = :preferred
-    end
-    if player_set.class == Array
-      player_set.each do |v|
-        case v.roles[pref]
-        when "Tank"
-          if self.tank.length<1
-            self.tank.push(v)
-          end
-        when "Damage"
-          if self.damage.length<1
-            self.damage.push(v)
-          end
-        when "Support"
-          if self.support.length<1
-            self.support.push(v)
-          end
+  def determine_roles
+    preference = :preferred
+    lobby = 0
+    new_team = {
+      :tank => [],
+      :damage => [],
+      :support => []
+    }
+    looked_at = []
+    considered_twice = false
+    players_left = @unassigned.length
+
+      while true
+        if lobby == 6
+          name = generate_name("team")
+          self.teams[name.downcase.to_sym] = Team.new(name, new_team)
+          lobby = 0
+          new_team = {
+            :tank => [],
+            :damage => [],
+            :support => []
+          }
+        elsif considered_twice && preference != :second
+          preference = :second
+          looked_at = []
+          considered_twice = false
+        elsif considered_twice && preference == :second || @unassigned.empty?
+          new_team.values.each { |e| @unassigned += e }
+          break
         else
-          self[v.roles.second.downcase.to_sym].push(v)
+          case @unassigned[0].roles[preference].downcase
+          when "tank"
+            if new_team[:tank].length<2
+              lobby += 1
+              new_team[:tank].push(@unassigned.slice!(0))
+            else
+              if looked_at.count(@unassigned[0])>4
+                considered_twice = true
+              else
+                looked_at.push(@unassigned[0])
+                @unassigned.push(@unassigned.slice!(0))
+              end
+            end
+          when "damage"
+            if new_team[:damage].length<2
+              lobby += 1
+              new_team[:damage].push(@unassigned.slice!(0))
+            else
+              if looked_at.count(@unassigned[0])>4
+                considered_twice = true
+              else
+                looked_at.push(@unassigned[0])
+                @unassigned.push(@unassigned.slice!(0))
+              end
+            end
+          when "support"
+            if new_team[:support].length<2
+              lobby += 1
+              new_team[:support].push(@unassigned.slice!(0))
+            else
+              if looked_at.count(@unassigned[0])>4
+                considered_twice = true
+              else
+                looked_at.push(@unassigned[0])
+                @unassigned.push(@unassigned.slice!(0))
+              end
+            end
+          end
         end
-        puts [self.tank.length, self.damage.length, self.support.length].min
-        puts "#{self.tank.length}, #{self.damage.length}, #{self.support.length}"
       end
-    else
-      player_set.each_pair do |k,v|
-        case v.roles[pref]
-        when "Tank"
-          self.tank.push(v)
-        when "Damage"
-          self.damage.push(v)
-        when "Support"
-          self.support.push(v)
-        end
-      end
+  end
+
+  def fix_teams
+
+    until @unassigned.empty?
+      @unassigned = @players.values.shuffle
+      @teams = {}
+      determine_roles
     end
   end
 
-  def assign_teams
-    smallest_role = [self.tank.length, self.damage.length, self.support.length].min
-    while smallest_role>1
-      if self.tank.length>1 && self.damage.length>1 && self.support.length>1
-        players = {:tank => self.tank.pop(2),
-          :damage =>self.damage.pop(2),
-          :support => self.support.pop(2)}
-      end
-      name = generate_name("team")
-      self.teams[name.downcase.to_sym] = Team.new(name, players)
-      smallest_role -=2
+  def generate_div_size
+    puts "Total players: #{self.player_count}"
+    puts "expected teams in perfect situation: #{self.player_count/6}"
+    puts "Amount of teams = #{self.teams.length}"
+    puts "even amount of teams?"
+    if self.teams.length.modulo(2) == 0
+      forced_even = self.teams.length
+      p "yes"
+    else
+      forced_even = self.teams.length-1
+      p "no, there will be #{self.teams.length - forced_even} orphaned teams"
     end
+
+    division_size = 8
+    while division_size<forced_even && forced_even.modulo(division_size) != 0
+      division_size = division_size+2
+    end
+    division_size<forced_even ? (p "#{forced_even/division_size} Divisions of #{division_size} Teams") : (p "1 Division of #{division_size} Teams (open div)")
+  end
+
+  def generate_divisions
+    sorted = @teams.values.sort_by(&:sr_avg)
+    sorted.each_slice(8) do |teams|
+      @info.push(Division.new(generate_name('div'), teams))
+    end
+  end
+
+  def print_divisions
+    @info.each(&:print_info)
   end
 
 

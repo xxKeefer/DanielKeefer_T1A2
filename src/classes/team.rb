@@ -22,7 +22,7 @@ class Team
     card.head = [self.name, "SR AVG: #{self.sr_avg}"]
     card.rows = []
     self.players.each_pair do |role, val|
-      val.each { |player| card.rows.push([player.roles[:preferred], player.name]) }
+      val.each { |player| card.rows.push([role.to_s.capitalize, player.name]) }
     end
     puts card.to_s
 
