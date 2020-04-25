@@ -10,26 +10,18 @@ require_relative "../mod/util.rb"
 include Util
 
 class Event
-  attr_accessor :name, :date, :players, :player_count, :tank, :damage, :support, :teams, :info
+  attr_accessor :name, :date, :players, :player_count, :teams, :info
 
   def initialize players
-    @name =""
-    @date =""
+    @name = generate_name('name')
+    @date = Time.new.strftime("%d_%m_%Y")
     @players = players
     @unassigned = @players.values.shuffle
     @player_count = @players.length
     @teams = {}
     @info = []
-    # {
-    #   :div => {
-    #     :some_name => {
-    #       :braket => {
-    #         :east => {},
-    #         :west => {}
-    #       }
-    #     }
-    #   }
-    # }
+    @completed = false
+
   end
 
   def generate_name(type)
@@ -46,15 +38,14 @@ class Event
   end
 
   def generate_event
+    puts "Please be patient, this may take a while depending on amount of players."
     fix_teams
-    #print_teams
     generate_divisions
-    print_divisions
+    #print_divisions
   end
 
   def print_teams
-    self.teams.each_pair { |name, team| team.print_info }
-    puts "unable to find teams for following players:"
+    @teams.each_pair { |name, team| team.print_info }
     @unassigned.each { |e| puts "#{e.roles[:preferred]} | #{e.roles[:second]} | #{e.name}" }
   end
 
@@ -168,6 +159,11 @@ class Event
 
   def print_divisions
     @info.each(&:print_info)
+  end
+
+  def save_event
+
+
   end
 
 

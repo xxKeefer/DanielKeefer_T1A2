@@ -16,7 +16,7 @@ until quit
   case menu.select("Welcome to Overwatch Event Planner!",
      ["Player Management",
        "Event Management",
-       "[Dev] Populate DB",
+       "[Dev Options] Populate DB",
        "Quit"])
 
   when "Player Management"
@@ -62,7 +62,7 @@ until quit
 
        when "Display All Players"
          #print player to screen
-         player_db = YAML.load(File.read("./db/player_db.yml"))
+         player_db =  Util.load_db('player')
          player_db.each { |k,v| v.print_info  }
        else
          break
@@ -80,32 +80,102 @@ until quit
       when "Create Event"
         new_event = Event.new(Util.load_db("player"))
         new_event.generate_event
+        event_db = Util.load_db('event')
+        event_db["#{new_event.date}-#{new_event.name.downcase}"] = new_event
+        File.write("./db/event_db.yml", YAML.dump(event_db))
       when "View Archive"
-        p "temp"
+        event_db = Util.load_db('event')
+        while true
+          choice = menu.select("which event are you interested in?", event_db.keys)
+          case menu.select("#{event_db[choice].name} Cup Menu",
+            ['Display Divisions',
+            'Display Teams',
+            'Display Matches',
+            'Display Players',
+            'Log Results',
+            'Back'])
+          when 'Display Divisions'
+            options = []
+            event_db[choice].info.each { |e| options.push(e.name) }
+            choice_div = menu.select('Which Division?', options)
+            index_div = options.find_index(choice_div).to_i
+            puts event_db[choice].info[index_div].print_info
+          when 'Display Teams'
+            options = []
+            event_db[choice].info.each { |e| options.push(e.name) }
+            choice_div = menu.select('Which Division?', options)
+            index_div = options.find_index(choice_div).to_i
+            puts event_db[choice].info[index_div].print_teams
+          when 'Display Matches'
+            options = []
+            event_db[choice].info.each { |e| options.push(e.name) }
+            choice_div = menu.select('Which Division?', options)
+            index_div = options.find_index(choice_div).to_i
+            puts event_db[choice].info[index_div].print_matches
+          when 'Display Players'
+            options = []
+            event_db[choice].info.each { |e| options.push(e.name) }
+            choice_div = menu.select('Which Division?', options)
+            index_div = options.find_index(choice_div).to_i
+            options_team = []
+            event_db[choice].info[index_div].teams.each { |e| options_team.push(e.name) }
+            choice_team = menu.select('Which Team?', options_team)
+            index_team = options_team.find_index(choice_team).to_i
+            players = event_db[choice].info[index_div].teams[index_team].players
+            players.each_pair { |_, player| player.each(&:print_info) }
 
+          when 'Log Results'
+
+          else
+            break
+          end
+        end
       else
         break
       end
     end
 
 
-  when "[Dev] Populate DB"
-    if menu.yes?("Destroy Curent DB and Populate with random Fake players?")
-      if menu.yes?("Are you really super dooper sure?") do |q|
-        q.default false
-        q.positive 'y' #'really super dooper sure'
-        q.negative 'No, go back please'
-      end
-
-        number_of_fakes = menu.ask("How many FAKE PLAYERS? 1 - 1000") do |q|
-          q.in("1-1000")
+  when "[Dev Options] Populate DB"
+    case menu.select("Dev Options",
+    ['populate random players',
+      'destroy event archive'])
+    when 'populate random players'
+      if menu.yes?("Destroy Curent DB and Populate with random Fake players?")
+        if menu.yes?("Are you really super dooper sure?") do |q|
+          q.default false
+          q.positive 'y' #'really super dooper sure'
+          q.negative 'No, go back please'
         end
-        Util.populate(number_of_fakes.to_i)
 
-      else
-        puts "Phew! That was close!"
+          number_of_fakes = menu.ask("How many FAKE PLAYERS? 1 - 1000") do |q|
+            q.in("1-1000")
+          end
+          Util.populate(number_of_fakes.to_i)
+
+        else
+          puts "Phew! That was close!"
+        end
+      end
+    when 'destroy event archive'
+      if menu.yes?("Destroy Curent DB and Populate with random Fake players?")
+        if menu.yes?("Are you really super dooper sure?") do |q|
+          q.default false
+          q.positive 'y' #'really super dooper sure'
+          q.negative 'No, go back please'
+        end
+
+          event_db = Util.load_db('event')
+          event_db = {}
+          File.write("./db/event_db.yml", YAML.dump(event_db))
+          puts "Gone! just like the library of alexandria."
+
+        else
+          puts "Phew! That was close!"
+        end
       end
     end
+
 
 
   when "Quit"
