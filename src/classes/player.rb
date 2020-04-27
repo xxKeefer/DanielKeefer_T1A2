@@ -64,10 +64,11 @@ class Player
   end
 
   def get_sr(role)
-    self.roles[role.to_sym] = @@user.ask("What is your skill rating #{role.capitalize}?") do |q|
+    sr = @@user.ask("What is your skill rating #{role.capitalize}?") do |q|
       q.required true
       q.in("1-5000")
     end
+    self.roles[role.to_sym] = sr.to_i
   end
 
   def update_dossier

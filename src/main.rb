@@ -92,7 +92,7 @@ until quit
             'Display Teams',
             'Display Matches',
             'Display Players',
-            'Log Results',
+            'Find Player',
             'Back'])
           when 'Display Divisions'
             options = []
@@ -124,8 +124,28 @@ until quit
             players = event_db[choice].info[index_div].teams[index_team].players
             players.each_pair { |_, player| player.each(&:print_info) }
 
-          when 'Log Results'
-
+          when 'Find Player'
+            query = menu.ask ("Which player?") do |q|
+               q.required true
+               q.validate /\A[\w\d]{1,15}#\d{4,5}\Z/
+             end
+             if event_db[choice].players.keys.include?(query)
+               event_db[choice].info.each do |div|
+                 div.teams.each do |team|
+                   team.players.each_pair do |role, p|
+                     p.each do |e|
+                       if e.id == query
+                         puts "\n#--- {e.name} is in #{team.name} Team playing as #{role.to_s.capitalize} in the #{div.name} Division\n"
+                         break
+                       end
+                     end
+                   end
+                 end
+               end
+             else
+               puts "#{query} is not participating in this event."
+               break
+             end
           else
             break
           end
@@ -158,7 +178,7 @@ until quit
         end
       end
     when 'destroy event archive'
-      if menu.yes?("Destroy Curent DB and Populate with random Fake players?")
+      if menu.yes?("Destroy Curent Event Archive DB?")
         if menu.yes?("Are you really super dooper sure?") do |q|
           q.default false
           q.positive 'y' #'really super dooper sure'

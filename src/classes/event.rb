@@ -41,7 +41,7 @@ class Event
     puts "Please be patient, this may take a while depending on amount of players."
     fix_teams
     generate_divisions
-    #print_divisions
+    puts "#{@name} | Event Created!."
   end
 
   def print_teams
@@ -122,12 +122,14 @@ class Event
   end
 
   def fix_teams
-
-    until @unassigned.empty?
+atempts =0
+    until @unassigned.empty? || atempts>@players.length
       @unassigned = @players.values.shuffle
       @teams = {}
       determine_roles
+      atempts += 1
     end
+    @unassigned.empty? ? (puts "") : (puts "No Acceptable Team Configs found after #{atempts} atempts!")
   end
 
   def generate_div_size
