@@ -104,11 +104,14 @@ Summary of implementation plan. Include the following
 
 I put a link to my Trello here and screenshot below
 
+
 ------
 
 ## Testing
 
-Quick summary of testing. You can say you used your tests written here and then maybe a table showing you did some manual testing or a screenshot of an excel doc showing the same.
+All of my testing was manual, i didn't have time to rectify a lot of the errors. The resulsts of my tests are in the docs folder of this repo under `man_tests.xlsx`.
+
+![Manual Tests](docs/man_tests.png)
 
 ------
 

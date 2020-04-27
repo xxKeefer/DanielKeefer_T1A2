@@ -1,55 +1,7 @@
 ---
-SkunkReboot#5294: !ruby/object:Player
-  id: SkunkReboot#5294
-  name: SkunkReboot
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Support
-    :second: Damage
-    :tank: 3913
-    :damage: 1597
-    :support: 2991
-  dossier:
-    :endorsed:
-      :punctual: 45
-      :high_skill: 44
-      :positive: 0
-      :positivity: 20
-    :reported:
-      :forfeits: 40
-      :low_skill: 34
-      :toxicity: 0
-  history: {}
-SealionHack#2982: !ruby/object:Player
-  id: SealionHack#2982
-  name: SealionHack
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Support
-    :second: Tank
-    :tank: 2509
-    :damage: 2715
-    :support: 2366
-  dossier:
-    :endorsed:
-      :punctual: 20
-      :high_skill: 10
-      :positive: 0
-      :positivity: 1
-    :reported:
-      :forfeits: 45
-      :low_skill: 41
-      :toxicity: 25
-  history: {}
-OtterHack#1683: !ruby/object:Player
-  id: OtterHack#1683
-  name: OtterHack
+MouseOverride#7195: !ruby/object:Player
+  id: MouseOverride#7195
+  name: MouseOverride
   roles:
     :options:
     - Tank
@@ -57,935 +9,1031 @@ OtterHack#1683: !ruby/object:Player
     - Support
     :preferred: Damage
     :second: Support
-    :tank: 4014
-    :damage: 3570
-    :support: 1845
-  dossier:
-    :endorsed:
-      :punctual: 50
-      :high_skill: 43
-      :positive: 0
-      :positivity: 17
-    :reported:
-      :forfeits: 42
-      :low_skill: 46
-      :toxicity: 12
-  history: {}
-BuffaloIndex#8473: !ruby/object:Player
-  id: BuffaloIndex#8473
-  name: BuffaloIndex
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Damage
-    :second: Tank
-    :tank: 2579
-    :damage: 3961
-    :support: 3192
-  dossier:
-    :endorsed:
-      :punctual: 49
-      :high_skill: 32
-      :positive: 0
-      :positivity: 17
-    :reported:
-      :forfeits: 47
-      :low_skill: 27
-      :toxicity: 48
-  history: {}
-RavenReboot#4926: !ruby/object:Player
-  id: RavenReboot#4926
-  name: RavenReboot
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Damage
-    :second: Support
-    :tank: 1295
-    :damage: 4427
-    :support: 3101
-  dossier:
-    :endorsed:
-      :punctual: 48
-      :high_skill: 27
-      :positive: 0
-      :positivity: 0
-    :reported:
-      :forfeits: 8
-      :low_skill: 36
-      :toxicity: 24
-  history: {}
-MartenParse#6629: !ruby/object:Player
-  id: MartenParse#6629
-  name: MartenParse
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Support
-    :second: Tank
-    :tank: 2900
-    :damage: 2427
-    :support: 1262
-  dossier:
-    :endorsed:
-      :punctual: 37
-      :high_skill: 21
-      :positive: 0
-      :positivity: 21
-    :reported:
-      :forfeits: 14
-      :low_skill: 2
-      :toxicity: 5
-  history: {}
-TroutSynthesize#9992: !ruby/object:Player
-  id: TroutSynthesize#9992
-  name: TroutSynthesize
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Damage
-    :second: Support
-    :tank: 1401
-    :damage: 1173
-    :support: 4055
-  dossier:
-    :endorsed:
-      :punctual: 26
-      :high_skill: 41
-      :positive: 0
-      :positivity: 27
-    :reported:
-      :forfeits: 49
-      :low_skill: 39
-      :toxicity: 41
-  history: {}
-SardineCompress#4121: !ruby/object:Player
-  id: SardineCompress#4121
-  name: SardineCompress
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Damage
-    :second: Tank
-    :tank: 1148
-    :damage: 2710
-    :support: 1486
-  dossier:
-    :endorsed:
-      :punctual: 18
-      :high_skill: 23
-      :positive: 0
-      :positivity: 40
-    :reported:
-      :forfeits: 26
-      :low_skill: 45
-      :toxicity: 15
-  history: {}
-PlatypusQuantify#9453: !ruby/object:Player
-  id: PlatypusQuantify#9453
-  name: PlatypusQuantify
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Tank
-    :second: Support
-    :tank: 2516
-    :damage: 3325
-    :support: 1906
-  dossier:
-    :endorsed:
-      :punctual: 7
-      :high_skill: 47
-      :positive: 0
-      :positivity: 46
-    :reported:
-      :forfeits: 1
-      :low_skill: 21
-      :toxicity: 46
-  history: {}
-SkunkCompress#3629: !ruby/object:Player
-  id: SkunkCompress#3629
-  name: SkunkCompress
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Tank
-    :second: Support
-    :tank: 2512
-    :damage: 1804
-    :support: 3388
-  dossier:
-    :endorsed:
-      :punctual: 8
-      :high_skill: 14
-      :positive: 0
-      :positivity: 37
-    :reported:
-      :forfeits: 49
-      :low_skill: 43
-      :toxicity: 34
-  history: {}
-ChimpanzeeConnect#8687: !ruby/object:Player
-  id: ChimpanzeeConnect#8687
-  name: ChimpanzeeConnect
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Tank
-    :second: Support
-    :tank: 4006
-    :damage: 928
-    :support: 2390
-  dossier:
-    :endorsed:
-      :punctual: 29
-      :high_skill: 31
-      :positive: 0
-      :positivity: 30
-    :reported:
-      :forfeits: 28
-      :low_skill: 32
-      :toxicity: 15
-  history: {}
-WormCalculate#6833: !ruby/object:Player
-  id: WormCalculate#6833
-  name: WormCalculate
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Damage
-    :second: Tank
-    :tank: 3499
-    :damage: 3219
-    :support: 2063
-  dossier:
-    :endorsed:
-      :punctual: 33
-      :high_skill: 20
-      :positive: 0
-      :positivity: 39
-    :reported:
-      :forfeits: 46
-      :low_skill: 27
-      :toxicity: 26
-  history: {}
-HareOverride#8449: !ruby/object:Player
-  id: HareOverride#8449
-  name: HareOverride
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Support
-    :second: Damage
-    :tank: 1849
-    :damage: 528
-    :support: 2445
+    :tank: 4376
+    :damage: 2989
+    :support: 2270
   dossier:
     :endorsed:
       :punctual: 4
-      :high_skill: 8
-      :positive: 0
-      :positivity: 14
-    :reported:
-      :forfeits: 17
-      :low_skill: 46
-      :toxicity: 33
-  history: {}
-ButterflyOverride#1628: !ruby/object:Player
-  id: ButterflyOverride#1628
-  name: ButterflyOverride
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Support
-    :second: Damage
-    :tank: 2620
-    :damage: 2824
-    :support: 3270
-  dossier:
-    :endorsed:
-      :punctual: 25
-      :high_skill: 31
-      :positive: 0
-      :positivity: 9
-    :reported:
-      :forfeits: 50
-      :low_skill: 22
-      :toxicity: 45
-  history: {}
-BearParse#2998: !ruby/object:Player
-  id: BearParse#2998
-  name: BearParse
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Tank
-    :second: Damage
-    :tank: 3575
-    :damage: 1736
-    :support: 1434
-  dossier:
-    :endorsed:
-      :punctual: 28
-      :high_skill: 12
-      :positive: 0
-      :positivity: 10
-    :reported:
-      :forfeits: 46
-      :low_skill: 30
-      :toxicity: 23
-  history: {}
-MouseReboot#9053: !ruby/object:Player
-  id: MouseReboot#9053
-  name: MouseReboot
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Tank
-    :second: Support
-    :tank: 2358
-    :damage: 1880
-    :support: 926
-  dossier:
-    :endorsed:
-      :punctual: 32
-      :high_skill: 17
-      :positive: 0
-      :positivity: 28
-    :reported:
-      :forfeits: 18
-      :low_skill: 31
-      :toxicity: 4
-  history: {}
-CodCompress#3873: !ruby/object:Player
-  id: CodCompress#3873
-  name: CodCompress
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Tank
-    :second: Support
-    :tank: 596
-    :damage: 3854
-    :support: 4222
-  dossier:
-    :endorsed:
-      :punctual: 35
-      :high_skill: 47
-      :positive: 0
-      :positivity: 4
-    :reported:
-      :forfeits: 40
-      :low_skill: 44
-      :toxicity: 2
-  history: {}
-YellowjacketSynthesize#7856: !ruby/object:Player
-  id: YellowjacketSynthesize#7856
-  name: YellowjacketSynthesize
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Damage
-    :second: Support
-    :tank: 3691
-    :damage: 2037
-    :support: 2368
-  dossier:
-    :endorsed:
-      :punctual: 28
-      :high_skill: 29
-      :positive: 0
-      :positivity: 22
-    :reported:
-      :forfeits: 44
-      :low_skill: 30
-      :toxicity: 45
-  history: {}
-OxGenerate#9673: !ruby/object:Player
-  id: OxGenerate#9673
-  name: OxGenerate
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Damage
-    :second: Tank
-    :tank: 4022
-    :damage: 1588
-    :support: 2606
-  dossier:
-    :endorsed:
-      :punctual: 30
-      :high_skill: 48
-      :positive: 0
-      :positivity: 1
-    :reported:
-      :forfeits: 14
-      :low_skill: 45
-      :toxicity: 35
-  history: {}
-GorillaOverride#8980: !ruby/object:Player
-  id: GorillaOverride#8980
-  name: GorillaOverride
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Damage
-    :second: Tank
-    :tank: 3053
-    :damage: 1977
-    :support: 4058
-  dossier:
-    :endorsed:
-      :punctual: 48
-      :high_skill: 36
-      :positive: 0
-      :positivity: 17
-    :reported:
-      :forfeits: 26
-      :low_skill: 43
-      :toxicity: 13
-  history: {}
-PorcupineReboot#9590: !ruby/object:Player
-  id: PorcupineReboot#9590
-  name: PorcupineReboot
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Tank
-    :second: Damage
-    :tank: 4382
-    :damage: 4126
-    :support: 2390
-  dossier:
-    :endorsed:
-      :punctual: 21
-      :high_skill: 36
-      :positive: 0
-      :positivity: 15
-    :reported:
-      :forfeits: 49
-      :low_skill: 26
-      :toxicity: 10
-  history: {}
-GoatQuantify#6814: !ruby/object:Player
-  id: GoatQuantify#6814
-  name: GoatQuantify
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Support
-    :second: Damage
-    :tank: 2124
-    :damage: 1052
-    :support: 3577
-  dossier:
-    :endorsed:
-      :punctual: 3
-      :high_skill: 45
-      :positive: 0
-      :positivity: 38
-    :reported:
-      :forfeits: 11
-      :low_skill: 32
-      :toxicity: 6
-  history: {}
-DogGenerate#9673: !ruby/object:Player
-  id: DogGenerate#9673
-  name: DogGenerate
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Damage
-    :second: Support
-    :tank: 4476
-    :damage: 2829
-    :support: 4338
-  dossier:
-    :endorsed:
-      :punctual: 19
-      :high_skill: 11
-      :positive: 0
-      :positivity: 8
-    :reported:
-      :forfeits: 12
-      :low_skill: 22
-      :toxicity: 20
-  history: {}
-ElkSynthesize#7086: !ruby/object:Player
-  id: ElkSynthesize#7086
-  name: ElkSynthesize
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Damage
-    :second: Tank
-    :tank: 3061
-    :damage: 3254
-    :support: 1501
-  dossier:
-    :endorsed:
-      :punctual: 37
-      :high_skill: 50
-      :positive: 0
-      :positivity: 19
-    :reported:
-      :forfeits: 35
-      :low_skill: 14
-      :toxicity: 46
-  history: {}
-HerringCompress#1832: !ruby/object:Player
-  id: HerringCompress#1832
-  name: HerringCompress
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Tank
-    :second: Support
-    :tank: 2546
-    :damage: 3915
-    :support: 3992
-  dossier:
-    :endorsed:
-      :punctual: 20
-      :high_skill: 7
-      :positive: 0
-      :positivity: 41
-    :reported:
-      :forfeits: 16
-      :low_skill: 43
-      :toxicity: 16
-  history: {}
-AlpacaConnect#2944: !ruby/object:Player
-  id: AlpacaConnect#2944
-  name: AlpacaConnect
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Support
-    :second: Tank
-    :tank: 2074
-    :damage: 4045
-    :support: 2093
-  dossier:
-    :endorsed:
-      :punctual: 15
-      :high_skill: 45
-      :positive: 0
-      :positivity: 47
-    :reported:
-      :forfeits: 32
-      :low_skill: 3
-      :toxicity: 16
-  history: {}
-KoalaIndex#6147: !ruby/object:Player
-  id: KoalaIndex#6147
-  name: KoalaIndex
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Tank
-    :second: Support
-    :tank: 1323
-    :damage: 3212
-    :support: 870
-  dossier:
-    :endorsed:
-      :punctual: 47
-      :high_skill: 48
-      :positive: 0
-      :positivity: 41
-    :reported:
-      :forfeits: 33
-      :low_skill: 23
-      :toxicity: 37
-  history: {}
-BearParse#4157: !ruby/object:Player
-  id: BearParse#4157
-  name: BearParse
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Tank
-    :second: Support
-    :tank: 3955
-    :damage: 3739
-    :support: 3648
-  dossier:
-    :endorsed:
-      :punctual: 0
-      :high_skill: 8
-      :positive: 0
-      :positivity: 5
-    :reported:
-      :forfeits: 24
-      :low_skill: 22
-      :toxicity: 3
-  history: {}
-MammothParse#9973: !ruby/object:Player
-  id: MammothParse#9973
-  name: MammothParse
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Damage
-    :second: Support
-    :tank: 3230
-    :damage: 2162
-    :support: 2200
-  dossier:
-    :endorsed:
-      :punctual: 11
-      :high_skill: 43
-      :positive: 0
-      :positivity: 3
-    :reported:
-      :forfeits: 2
-      :low_skill: 30
-      :toxicity: 5
-  history: {}
-LocustConnect#7789: !ruby/object:Player
-  id: LocustConnect#7789
-  name: LocustConnect
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Support
-    :second: Damage
-    :tank: 2035
-    :damage: 1552
-    :support: 623
-  dossier:
-    :endorsed:
-      :punctual: 43
-      :high_skill: 19
-      :positive: 0
-      :positivity: 46
-    :reported:
-      :forfeits: 44
-      :low_skill: 6
-      :toxicity: 0
-  history: {}
-BearParse#1764: !ruby/object:Player
-  id: BearParse#1764
-  name: BearParse
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Support
-    :second: Tank
-    :tank: 3441
-    :damage: 3088
-    :support: 2169
-  dossier:
-    :endorsed:
-      :punctual: 19
-      :high_skill: 28
-      :positive: 0
-      :positivity: 9
-    :reported:
-      :forfeits: 1
-      :low_skill: 14
-      :toxicity: 26
-  history: {}
-HedgehogHack#4554: !ruby/object:Player
-  id: HedgehogHack#4554
-  name: HedgehogHack
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Tank
-    :second: Damage
-    :tank: 1016
-    :damage: 1014
-    :support: 2275
-  dossier:
-    :endorsed:
-      :punctual: 42
-      :high_skill: 34
-      :positive: 0
-      :positivity: 20
-    :reported:
-      :forfeits: 25
-      :low_skill: 45
-      :toxicity: 36
-  history: {}
-TurtleCopy#8517: !ruby/object:Player
-  id: TurtleCopy#8517
-  name: TurtleCopy
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Support
-    :second: Tank
-    :tank: 3551
-    :damage: 1625
-    :support: 3317
-  dossier:
-    :endorsed:
-      :punctual: 6
-      :high_skill: 11
-      :positive: 0
-      :positivity: 10
-    :reported:
-      :forfeits: 28
-      :low_skill: 46
-      :toxicity: 48
-  history: {}
-RavenProgram#6343: !ruby/object:Player
-  id: RavenProgram#6343
-  name: RavenProgram
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Tank
-    :second: Support
-    :tank: 907
-    :damage: 535
-    :support: 3034
-  dossier:
-    :endorsed:
-      :punctual: 22
-      :high_skill: 20
+      :high_skill: 30
       :positive: 0
       :positivity: 23
     :reported:
-      :forfeits: 19
-      :low_skill: 40
-      :toxicity: 18
+      :forfeits: 9
+      :low_skill: 6
+      :toxicity: 36
   history: {}
-SkunkTransmit#7189: !ruby/object:Player
-  id: SkunkTransmit#7189
+TermiteBackup#2067: !ruby/object:Player
+  id: TermiteBackup#2067
+  name: TermiteBackup
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Damage
+    :second: Tank
+    :tank: 3378
+    :damage: 4113
+    :support: 1218
+  dossier:
+    :endorsed:
+      :punctual: 19
+      :high_skill: 10
+      :positive: 0
+      :positivity: 24
+    :reported:
+      :forfeits: 30
+      :low_skill: 36
+      :toxicity: 49
+  history: {}
+YakReboot#7965: !ruby/object:Player
+  id: YakReboot#7965
+  name: YakReboot
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Support
+    :second: Tank
+    :tank: 977
+    :damage: 1521
+    :support: 4147
+  dossier:
+    :endorsed:
+      :punctual: 24
+      :high_skill: 43
+      :positive: 0
+      :positivity: 10
+    :reported:
+      :forfeits: 22
+      :low_skill: 1
+      :toxicity: 8
+  history: {}
+MartenGenerate#6913: !ruby/object:Player
+  id: MartenGenerate#6913
+  name: MartenGenerate
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Support
+    :second: Damage
+    :tank: 1893
+    :damage: 1873
+    :support: 954
+  dossier:
+    :endorsed:
+      :punctual: 42
+      :high_skill: 43
+      :positive: 0
+      :positivity: 48
+    :reported:
+      :forfeits: 15
+      :low_skill: 32
+      :toxicity: 16
+  history: {}
+AlpacaQuantify#3242: !ruby/object:Player
+  id: AlpacaQuantify#3242
+  name: AlpacaQuantify
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Damage
+    :second: Tank
+    :tank: 595
+    :damage: 1293
+    :support: 4550
+  dossier:
+    :endorsed:
+      :punctual: 30
+      :high_skill: 32
+      :positive: 0
+      :positivity: 3
+    :reported:
+      :forfeits: 21
+      :low_skill: 36
+      :toxicity: 49
+  history: {}
+GoldfishConnect#2263: !ruby/object:Player
+  id: GoldfishConnect#2263
+  name: GoldfishConnect
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Damage
+    :second: Tank
+    :tank: 2244
+    :damage: 4192
+    :support: 1071
+  dossier:
+    :endorsed:
+      :punctual: 37
+      :high_skill: 6
+      :positive: 0
+      :positivity: 8
+    :reported:
+      :forfeits: 38
+      :low_skill: 28
+      :toxicity: 49
+  history: {}
+ChimpanzeeProgram#4859: !ruby/object:Player
+  id: ChimpanzeeProgram#4859
+  name: ChimpanzeeProgram
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Damage
+    :second: Tank
+    :tank: 1403
+    :damage: 2457
+    :support: 3431
+  dossier:
+    :endorsed:
+      :punctual: 2
+      :high_skill: 33
+      :positive: 0
+      :positivity: 35
+    :reported:
+      :forfeits: 45
+      :low_skill: 47
+      :toxicity: 47
+  history: {}
+BeetleBypass#3858: !ruby/object:Player
+  id: BeetleBypass#3858
+  name: BeetleBypass
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Damage
+    :second: Tank
+    :tank: 3312
+    :damage: 2903
+    :support: 4349
+  dossier:
+    :endorsed:
+      :punctual: 5
+      :high_skill: 10
+      :positive: 0
+      :positivity: 35
+    :reported:
+      :forfeits: 7
+      :low_skill: 9
+      :toxicity: 27
+  history: {}
+CodProgram#9127: !ruby/object:Player
+  id: CodProgram#9127
+  name: CodProgram
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Damage
+    :second: Tank
+    :tank: 3892
+    :damage: 2782
+    :support: 4391
+  dossier:
+    :endorsed:
+      :punctual: 31
+      :high_skill: 36
+      :positive: 0
+      :positivity: 5
+    :reported:
+      :forfeits: 16
+      :low_skill: 18
+      :toxicity: 31
+  history: {}
+ScorpionReboot#5386: !ruby/object:Player
+  id: ScorpionReboot#5386
+  name: ScorpionReboot
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Tank
+    :second: Damage
+    :tank: 4465
+    :damage: 3871
+    :support: 3860
+  dossier:
+    :endorsed:
+      :punctual: 29
+      :high_skill: 4
+      :positive: 0
+      :positivity: 50
+    :reported:
+      :forfeits: 35
+      :low_skill: 14
+      :toxicity: 14
+  history: {}
+WildebeestCompress#6616: !ruby/object:Player
+  id: WildebeestCompress#6616
+  name: WildebeestCompress
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Tank
+    :second: Damage
+    :tank: 3301
+    :damage: 3575
+    :support: 549
+  dossier:
+    :endorsed:
+      :punctual: 44
+      :high_skill: 48
+      :positive: 0
+      :positivity: 39
+    :reported:
+      :forfeits: 24
+      :low_skill: 4
+      :toxicity: 22
+  history: {}
+DuckCopy#1964: !ruby/object:Player
+  id: DuckCopy#1964
+  name: DuckCopy
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Damage
+    :second: Tank
+    :tank: 2029
+    :damage: 1054
+    :support: 3936
+  dossier:
+    :endorsed:
+      :punctual: 0
+      :high_skill: 10
+      :positive: 0
+      :positivity: 23
+    :reported:
+      :forfeits: 50
+      :low_skill: 9
+      :toxicity: 48
+  history: {}
+GnatBackup#1387: !ruby/object:Player
+  id: GnatBackup#1387
+  name: GnatBackup
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Damage
+    :second: Support
+    :tank: 3973
+    :damage: 964
+    :support: 521
+  dossier:
+    :endorsed:
+      :punctual: 45
+      :high_skill: 33
+      :positive: 0
+      :positivity: 0
+    :reported:
+      :forfeits: 28
+      :low_skill: 37
+      :toxicity: 37
+  history: {}
+RhinocerosBypass#6353: !ruby/object:Player
+  id: RhinocerosBypass#6353
+  name: RhinocerosBypass
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Tank
+    :second: Support
+    :tank: 3168
+    :damage: 1455
+    :support: 4461
+  dossier:
+    :endorsed:
+      :punctual: 17
+      :high_skill: 43
+      :positive: 0
+      :positivity: 30
+    :reported:
+      :forfeits: 19
+      :low_skill: 24
+      :toxicity: 5
+  history: {}
+CoyoteTransmit#8387: !ruby/object:Player
+  id: CoyoteTransmit#8387
+  name: CoyoteTransmit
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Tank
+    :second: Damage
+    :tank: 4531
+    :damage: 4046
+    :support: 2917
+  dossier:
+    :endorsed:
+      :punctual: 27
+      :high_skill: 19
+      :positive: 0
+      :positivity: 22
+    :reported:
+      :forfeits: 11
+      :low_skill: 2
+      :toxicity: 47
+  history: {}
+HoundIndex#4526: !ruby/object:Player
+  id: HoundIndex#4526
+  name: HoundIndex
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Damage
+    :second: Support
+    :tank: 4141
+    :damage: 2107
+    :support: 2683
+  dossier:
+    :endorsed:
+      :punctual: 32
+      :high_skill: 13
+      :positive: 0
+      :positivity: 39
+    :reported:
+      :forfeits: 31
+      :low_skill: 28
+      :toxicity: 11
+  history: {}
+PandaParse#2234: !ruby/object:Player
+  id: PandaParse#2234
+  name: PandaParse
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Tank
+    :second: Damage
+    :tank: 2660
+    :damage: 4084
+    :support: 1300
+  dossier:
+    :endorsed:
+      :punctual: 10
+      :high_skill: 0
+      :positive: 0
+      :positivity: 5
+    :reported:
+      :forfeits: 18
+      :low_skill: 47
+      :toxicity: 14
+  history: {}
+GerbilReboot#6173: !ruby/object:Player
+  id: GerbilReboot#6173
+  name: GerbilReboot
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Damage
+    :second: Tank
+    :tank: 4228
+    :damage: 869
+    :support: 3952
+  dossier:
+    :endorsed:
+      :punctual: 19
+      :high_skill: 9
+      :positive: 0
+      :positivity: 3
+    :reported:
+      :forfeits: 12
+      :low_skill: 49
+      :toxicity: 48
+  history: {}
+PigBypass#7722: !ruby/object:Player
+  id: PigBypass#7722
+  name: PigBypass
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Support
+    :second: Damage
+    :tank: 2372
+    :damage: 3547
+    :support: 3673
+  dossier:
+    :endorsed:
+      :punctual: 6
+      :high_skill: 15
+      :positive: 0
+      :positivity: 45
+    :reported:
+      :forfeits: 30
+      :low_skill: 2
+      :toxicity: 31
+  history: {}
+SquirrelConnect#9829: !ruby/object:Player
+  id: SquirrelConnect#9829
+  name: SquirrelConnect
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Tank
+    :second: Support
+    :tank: 2831
+    :damage: 906
+    :support: 1025
+  dossier:
+    :endorsed:
+      :punctual: 42
+      :high_skill: 42
+      :positive: 0
+      :positivity: 3
+    :reported:
+      :forfeits: 11
+      :low_skill: 14
+      :toxicity: 31
+  history: {}
+SealionParse#8963: !ruby/object:Player
+  id: SealionParse#8963
+  name: SealionParse
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Tank
+    :second: Damage
+    :tank: 1037
+    :damage: 1995
+    :support: 950
+  dossier:
+    :endorsed:
+      :punctual: 10
+      :high_skill: 26
+      :positive: 0
+      :positivity: 0
+    :reported:
+      :forfeits: 31
+      :low_skill: 24
+      :toxicity: 9
+  history: {}
+ApeCalculate#8018: !ruby/object:Player
+  id: ApeCalculate#8018
+  name: ApeCalculate
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Damage
+    :second: Tank
+    :tank: 2850
+    :damage: 835
+    :support: 1072
+  dossier:
+    :endorsed:
+      :punctual: 29
+      :high_skill: 24
+      :positive: 0
+      :positivity: 39
+    :reported:
+      :forfeits: 18
+      :low_skill: 17
+      :toxicity: 24
+  history: {}
+GiraffeIndex#6473: !ruby/object:Player
+  id: GiraffeIndex#6473
+  name: GiraffeIndex
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Support
+    :second: Damage
+    :tank: 3895
+    :damage: 2970
+    :support: 4048
+  dossier:
+    :endorsed:
+      :punctual: 12
+      :high_skill: 18
+      :positive: 0
+      :positivity: 23
+    :reported:
+      :forfeits: 22
+      :low_skill: 1
+      :toxicity: 29
+  history: {}
+DinosaurTransmit#2873: !ruby/object:Player
+  id: DinosaurTransmit#2873
+  name: DinosaurTransmit
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Support
+    :second: Damage
+    :tank: 1499
+    :damage: 3793
+    :support: 4208
+  dossier:
+    :endorsed:
+      :punctual: 25
+      :high_skill: 26
+      :positive: 0
+      :positivity: 13
+    :reported:
+      :forfeits: 31
+      :low_skill: 4
+      :toxicity: 39
+  history: {}
+EagleInput#3943: !ruby/object:Player
+  id: EagleInput#3943
+  name: EagleInput
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Support
+    :second: Tank
+    :tank: 3322
+    :damage: 1842
+    :support: 1786
+  dossier:
+    :endorsed:
+      :punctual: 49
+      :high_skill: 30
+      :positive: 0
+      :positivity: 46
+    :reported:
+      :forfeits: 16
+      :low_skill: 17
+      :toxicity: 31
+  history: {}
+RaccoonIndex#7127: !ruby/object:Player
+  id: RaccoonIndex#7127
+  name: RaccoonIndex
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Damage
+    :second: Support
+    :tank: 2913
+    :damage: 3113
+    :support: 4343
+  dossier:
+    :endorsed:
+      :punctual: 6
+      :high_skill: 47
+      :positive: 0
+      :positivity: 13
+    :reported:
+      :forfeits: 21
+      :low_skill: 34
+      :toxicity: 40
+  history: {}
+MartenSynthesize#2657: !ruby/object:Player
+  id: MartenSynthesize#2657
+  name: MartenSynthesize
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Tank
+    :second: Support
+    :tank: 1884
+    :damage: 4159
+    :support: 4378
+  dossier:
+    :endorsed:
+      :punctual: 9
+      :high_skill: 1
+      :positive: 0
+      :positivity: 10
+    :reported:
+      :forfeits: 33
+      :low_skill: 27
+      :toxicity: 17
+  history: {}
+PugCompress#5776: !ruby/object:Player
+  id: PugCompress#5776
+  name: PugCompress
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Support
+    :second: Tank
+    :tank: 1167
+    :damage: 2124
+    :support: 2652
+  dossier:
+    :endorsed:
+      :punctual: 16
+      :high_skill: 35
+      :positive: 0
+      :positivity: 18
+    :reported:
+      :forfeits: 6
+      :low_skill: 40
+      :toxicity: 23
+  history: {}
+CrabReboot#7518: !ruby/object:Player
+  id: CrabReboot#7518
+  name: CrabReboot
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Tank
+    :second: Damage
+    :tank: 1441
+    :damage: 3639
+    :support: 4413
+  dossier:
+    :endorsed:
+      :punctual: 7
+      :high_skill: 10
+      :positive: 0
+      :positivity: 41
+    :reported:
+      :forfeits: 11
+      :low_skill: 23
+      :toxicity: 23
+  history: {}
+MuskratNavigate#9475: !ruby/object:Player
+  id: MuskratNavigate#9475
+  name: MuskratNavigate
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Support
+    :second: Tank
+    :tank: 2373
+    :damage: 823
+    :support: 4597
+  dossier:
+    :endorsed:
+      :punctual: 48
+      :high_skill: 20
+      :positive: 0
+      :positivity: 21
+    :reported:
+      :forfeits: 22
+      :low_skill: 11
+      :toxicity: 43
+  history: {}
+BearSynthesize#7232: !ruby/object:Player
+  id: BearSynthesize#7232
+  name: BearSynthesize
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Tank
+    :second: Support
+    :tank: 3452
+    :damage: 1311
+    :support: 1550
+  dossier:
+    :endorsed:
+      :punctual: 32
+      :high_skill: 1
+      :positive: 0
+      :positivity: 14
+    :reported:
+      :forfeits: 42
+      :low_skill: 12
+      :toxicity: 45
+  history: {}
+MooseBypass#2274: !ruby/object:Player
+  id: MooseBypass#2274
+  name: MooseBypass
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Support
+    :second: Damage
+    :tank: 897
+    :damage: 3799
+    :support: 1470
+  dossier:
+    :endorsed:
+      :punctual: 36
+      :high_skill: 47
+      :positive: 0
+      :positivity: 30
+    :reported:
+      :forfeits: 32
+      :low_skill: 9
+      :toxicity: 7
+  history: {}
+MinnowReboot#9757: !ruby/object:Player
+  id: MinnowReboot#9757
+  name: MinnowReboot
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Support
+    :second: Damage
+    :tank: 1209
+    :damage: 3255
+    :support: 4165
+  dossier:
+    :endorsed:
+      :punctual: 45
+      :high_skill: 22
+      :positive: 0
+      :positivity: 7
+    :reported:
+      :forfeits: 32
+      :low_skill: 13
+      :toxicity: 25
+  history: {}
+GoldfishCompress#6353: !ruby/object:Player
+  id: GoldfishCompress#6353
+  name: GoldfishCompress
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Damage
+    :second: Tank
+    :tank: 4442
+    :damage: 1119
+    :support: 4445
+  dossier:
+    :endorsed:
+      :punctual: 42
+      :high_skill: 7
+      :positive: 0
+      :positivity: 5
+    :reported:
+      :forfeits: 21
+      :low_skill: 1
+      :toxicity: 46
+  history: {}
+WhaleBackup#2911: !ruby/object:Player
+  id: WhaleBackup#2911
+  name: WhaleBackup
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Support
+    :second: Damage
+    :tank: 3120
+    :damage: 548
+    :support: 796
+  dossier:
+    :endorsed:
+      :punctual: 44
+      :high_skill: 44
+      :positive: 0
+      :positivity: 43
+    :reported:
+      :forfeits: 28
+      :low_skill: 44
+      :toxicity: 1
+  history: {}
+EelQuantify#3688: !ruby/object:Player
+  id: EelQuantify#3688
+  name: EelQuantify
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Support
+    :second: Tank
+    :tank: 1461
+    :damage: 1877
+    :support: 3218
+  dossier:
+    :endorsed:
+      :punctual: 50
+      :high_skill: 35
+      :positive: 0
+      :positivity: 5
+    :reported:
+      :forfeits: 18
+      :low_skill: 40
+      :toxicity: 31
+  history: {}
+ElkGenerate#1749: !ruby/object:Player
+  id: ElkGenerate#1749
+  name: ElkGenerate
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Tank
+    :second: Damage
+    :tank: 4178
+    :damage: 611
+    :support: 1978
+  dossier:
+    :endorsed:
+      :punctual: 11
+      :high_skill: 1
+      :positive: 0
+      :positivity: 2
+    :reported:
+      :forfeits: 18
+      :low_skill: 30
+      :toxicity: 16
+  history: {}
+SealParse#3260: !ruby/object:Player
+  id: SealParse#3260
+  name: SealParse
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Tank
+    :second: Support
+    :tank: 1575
+    :damage: 1555
+    :support: 3705
+  dossier:
+    :endorsed:
+      :punctual: 27
+      :high_skill: 18
+      :positive: 0
+      :positivity: 25
+    :reported:
+      :forfeits: 49
+      :low_skill: 43
+      :toxicity: 6
+  history: {}
+KangarooConnect#7134: !ruby/object:Player
+  id: KangarooConnect#7134
+  name: KangarooConnect
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Tank
+    :second: Damage
+    :tank: 1972
+    :damage: 1951
+    :support: 2123
+  dossier:
+    :endorsed:
+      :punctual: 32
+      :high_skill: 4
+      :positive: 0
+      :positivity: 1
+    :reported:
+      :forfeits: 32
+      :low_skill: 39
+      :toxicity: 23
+  history: {}
+MallardCompress#9239: !ruby/object:Player
+  id: MallardCompress#9239
+  name: MallardCompress
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Damage
+    :second: Tank
+    :tank: 2375
+    :damage: 1410
+    :support: 3161
+  dossier:
+    :endorsed:
+      :punctual: 26
+      :high_skill: 42
+      :positive: 0
+      :positivity: 4
+    :reported:
+      :forfeits: 29
+      :low_skill: 21
+      :toxicity: 38
+  history: {}
+SkunkTransmit#5975: !ruby/object:Player
+  id: SkunkTransmit#5975
   name: SkunkTransmit
   roles:
     :options:
     - Tank
     - Damage
     - Support
-    :preferred: Support
-    :second: Damage
-    :tank: 807
-    :damage: 1747
-    :support: 2987
+    :preferred: Damage
+    :second: Tank
+    :tank: 4047
+    :damage: 2557
+    :support: 593
   dossier:
     :endorsed:
       :punctual: 23
-      :high_skill: 40
+      :high_skill: 1
       :positive: 0
-      :positivity: 48
+      :positivity: 29
     :reported:
-      :forfeits: 1
-      :low_skill: 0
-      :toxicity: 48
+      :forfeits: 40
+      :low_skill: 17
+      :toxicity: 12
   history: {}
-SealionCalculate#1799: !ruby/object:Player
-  id: SealionCalculate#1799
-  name: SealionCalculate
+CoyoteGenerate#6425: !ruby/object:Player
+  id: CoyoteGenerate#6425
+  name: CoyoteGenerate
   roles:
     :options:
     - Tank
     - Damage
     - Support
     :preferred: Tank
-    :second: Support
-    :tank: 3411
-    :damage: 809
-    :support: 4038
+    :second: Damage
+    :tank: 3977
+    :damage: 2796
+    :support: 4107
   dossier:
     :endorsed:
-      :punctual: 35
-      :high_skill: 5
+      :punctual: 12
+      :high_skill: 27
+      :positive: 0
+      :positivity: 39
+    :reported:
+      :forfeits: 35
+      :low_skill: 37
+      :toxicity: 37
+  history: {}
+SnakeNavigate#2002: !ruby/object:Player
+  id: SnakeNavigate#2002
+  name: SnakeNavigate
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Tank
+    :second: Damage
+    :tank: 2254
+    :damage: 4042
+    :support: 3921
+  dossier:
+    :endorsed:
+      :punctual: 42
+      :high_skill: 43
       :positive: 0
       :positivity: 21
     :reported:
-      :forfeits: 46
-      :low_skill: 30
-      :toxicity: 3
+      :forfeits: 34
+      :low_skill: 5
+      :toxicity: 34
   history: {}
-WormTransmit#2017: !ruby/object:Player
-  id: WormTransmit#2017
-  name: WormTransmit
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Tank
-    :second: Support
-    :tank: 518
-    :damage: 1431
-    :support: 875
-  dossier:
-    :endorsed:
-      :punctual: 41
-      :high_skill: 11
-      :positive: 0
-      :positivity: 31
-    :reported:
-      :forfeits: 15
-      :low_skill: 40
-      :toxicity: 29
-  history: {}
-WoodchuckCopy#6346: !ruby/object:Player
-  id: WoodchuckCopy#6346
-  name: WoodchuckCopy
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Support
-    :second: Tank
-    :tank: 939
-    :damage: 3205
-    :support: 3586
-  dossier:
-    :endorsed:
-      :punctual: 2
-      :high_skill: 23
-      :positive: 0
-      :positivity: 11
-    :reported:
-      :forfeits: 12
-      :low_skill: 16
-      :toxicity: 19
-  history: {}
-SalmonCompress#6575: !ruby/object:Player
-  id: SalmonCompress#6575
-  name: SalmonCompress
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Tank
-    :second: Damage
-    :tank: 3524
-    :damage: 2491
-    :support: 3786
-  dossier:
-    :endorsed:
-      :punctual: 32
-      :high_skill: 49
-      :positive: 0
-      :positivity: 50
-    :reported:
-      :forfeits: 43
-      :low_skill: 1
-      :toxicity: 6
-  history: {}
-ManateeSynthesize#6363: !ruby/object:Player
-  id: ManateeSynthesize#6363
-  name: ManateeSynthesize
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Support
-    :second: Tank
-    :tank: 2562
-    :damage: 4580
-    :support: 974
-  dossier:
-    :endorsed:
-      :punctual: 38
-      :high_skill: 1
-      :positive: 0
-      :positivity: 2
-    :reported:
-      :forfeits: 1
-      :low_skill: 9
-      :toxicity: 17
-  history: {}
-TortoiseInput#2495: !ruby/object:Player
-  id: TortoiseInput#2495
-  name: TortoiseInput
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Tank
-    :second: Damage
-    :tank: 951
-    :damage: 3060
-    :support: 2294
-  dossier:
-    :endorsed:
-      :punctual: 48
-      :high_skill: 1
-      :positive: 0
-      :positivity: 41
-    :reported:
-      :forfeits: 38
-      :low_skill: 10
-      :toxicity: 43
-  history: {}
-MinkProgram#6202: !ruby/object:Player
-  id: MinkProgram#6202
-  name: MinkProgram
+BeeInput#2237: !ruby/object:Player
+  id: BeeInput#2237
+  name: BeeInput
   roles:
     :options:
     - Tank
@@ -993,479 +1041,23 @@ MinkProgram#6202: !ruby/object:Player
     - Support
     :preferred: Damage
     :second: Tank
-    :tank: 2453
-    :damage: 1890
-    :support: 4447
-  dossier:
-    :endorsed:
-      :punctual: 38
-      :high_skill: 49
-      :positive: 0
-      :positivity: 12
-    :reported:
-      :forfeits: 20
-      :low_skill: 28
-      :toxicity: 26
-  history: {}
-MallardProgram#2966: !ruby/object:Player
-  id: MallardProgram#2966
-  name: MallardProgram
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Damage
-    :second: Tank
-    :tank: 1533
-    :damage: 1226
-    :support: 2694
-  dossier:
-    :endorsed:
-      :punctual: 1
-      :high_skill: 33
-      :positive: 0
-      :positivity: 10
-    :reported:
-      :forfeits: 43
-      :low_skill: 28
-      :toxicity: 46
-  history: {}
-HorseBypass#4042: !ruby/object:Player
-  id: HorseBypass#4042
-  name: HorseBypass
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Support
-    :second: Damage
-    :tank: 3080
-    :damage: 4574
-    :support: 1513
-  dossier:
-    :endorsed:
-      :punctual: 12
-      :high_skill: 25
-      :positive: 0
-      :positivity: 17
-    :reported:
-      :forfeits: 44
-      :low_skill: 48
-      :toxicity: 41
-  history: {}
-GerbilBackup#8226: !ruby/object:Player
-  id: GerbilBackup#8226
-  name: GerbilBackup
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Damage
-    :second: Tank
-    :tank: 3644
-    :damage: 2768
-    :support: 758
-  dossier:
-    :endorsed:
-      :punctual: 29
-      :high_skill: 39
-      :positive: 0
-      :positivity: 4
-    :reported:
-      :forfeits: 30
-      :low_skill: 45
-      :toxicity: 36
-  history: {}
-PlatypusCompress#2944: !ruby/object:Player
-  id: PlatypusCompress#2944
-  name: PlatypusCompress
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Support
-    :second: Tank
-    :tank: 802
-    :damage: 4412
-    :support: 3372
-  dossier:
-    :endorsed:
-      :punctual: 5
-      :high_skill: 30
-      :positive: 0
-      :positivity: 33
-    :reported:
-      :forfeits: 40
-      :low_skill: 21
-      :toxicity: 33
-  history: {}
-RabbitHack#1871: !ruby/object:Player
-  id: RabbitHack#1871
-  name: RabbitHack
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Support
-    :second: Tank
-    :tank: 2811
-    :damage: 1306
-    :support: 4232
-  dossier:
-    :endorsed:
-      :punctual: 9
-      :high_skill: 8
-      :positive: 0
-      :positivity: 50
-    :reported:
-      :forfeits: 9
-      :low_skill: 17
-      :toxicity: 22
-  history: {}
-BadgerCalculate#2908: !ruby/object:Player
-  id: BadgerCalculate#2908
-  name: BadgerCalculate
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Damage
-    :second: Tank
-    :tank: 764
-    :damage: 3308
-    :support: 4301
-  dossier:
-    :endorsed:
-      :punctual: 21
-      :high_skill: 43
-      :positive: 0
-      :positivity: 33
-    :reported:
-      :forfeits: 8
-      :low_skill: 2
-      :toxicity: 21
-  history: {}
-ClamProgram#8351: !ruby/object:Player
-  id: ClamProgram#8351
-  name: ClamProgram
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Tank
-    :second: Support
-    :tank: 2737
-    :damage: 1975
-    :support: 4179
-  dossier:
-    :endorsed:
-      :punctual: 31
-      :high_skill: 26
-      :positive: 0
-      :positivity: 0
-    :reported:
-      :forfeits: 7
-      :low_skill: 8
-      :toxicity: 12
-  history: {}
-LocustCompress#4329: !ruby/object:Player
-  id: LocustCompress#4329
-  name: LocustCompress
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Damage
-    :second: Tank
-    :tank: 2060
-    :damage: 3527
-    :support: 3172
-  dossier:
-    :endorsed:
-      :punctual: 47
-      :high_skill: 13
-      :positive: 0
-      :positivity: 37
-    :reported:
-      :forfeits: 41
-      :low_skill: 20
-      :toxicity: 4
-  history: {}
-PugProgram#4611: !ruby/object:Player
-  id: PugProgram#4611
-  name: PugProgram
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Damage
-    :second: Tank
-    :tank: 3840
-    :damage: 3505
-    :support: 3822
-  dossier:
-    :endorsed:
-      :punctual: 4
-      :high_skill: 26
-      :positive: 0
-      :positivity: 15
-    :reported:
-      :forfeits: 12
-      :low_skill: 30
-      :toxicity: 10
-  history: {}
-SnakeBypass#6526: !ruby/object:Player
-  id: SnakeBypass#6526
-  name: SnakeBypass
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Tank
-    :second: Damage
-    :tank: 4317
-    :damage: 3929
-    :support: 4279
-  dossier:
-    :endorsed:
-      :punctual: 34
-      :high_skill: 25
-      :positive: 0
-      :positivity: 13
-    :reported:
-      :forfeits: 26
-      :low_skill: 15
-      :toxicity: 41
-  history: {}
-MartenBackup#1390: !ruby/object:Player
-  id: MartenBackup#1390
-  name: MartenBackup
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Tank
-    :second: Damage
-    :tank: 4145
-    :damage: 3086
-    :support: 755
-  dossier:
-    :endorsed:
-      :punctual: 27
-      :high_skill: 14
-      :positive: 0
-      :positivity: 34
-    :reported:
-      :forfeits: 18
-      :low_skill: 18
-      :toxicity: 37
-  history: {}
-WaterbuffaloParse#1419: !ruby/object:Player
-  id: WaterbuffaloParse#1419
-  name: WaterbuffaloParse
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Tank
-    :second: Damage
-    :tank: 4565
-    :damage: 3035
-    :support: 2008
-  dossier:
-    :endorsed:
-      :punctual: 39
-      :high_skill: 10
-      :positive: 0
-      :positivity: 23
-    :reported:
-      :forfeits: 48
-      :low_skill: 48
-      :toxicity: 9
-  history: {}
-WildebeestBypass#9403: !ruby/object:Player
-  id: WildebeestBypass#9403
-  name: WildebeestBypass
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Damage
-    :second: Tank
-    :tank: 3749
-    :damage: 3605
-    :support: 1662
-  dossier:
-    :endorsed:
-      :punctual: 47
-      :high_skill: 42
-      :positive: 0
-      :positivity: 29
-    :reported:
-      :forfeits: 48
-      :low_skill: 27
-      :toxicity: 42
-  history: {}
-BaboonTransmit#4444: !ruby/object:Player
-  id: BaboonTransmit#4444
-  name: BaboonTransmit
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Damage
-    :second: Support
-    :tank: 4514
-    :damage: 1308
-    :support: 4413
-  dossier:
-    :endorsed:
-      :punctual: 28
-      :high_skill: 48
-      :positive: 0
-      :positivity: 6
-    :reported:
-      :forfeits: 15
-      :low_skill: 2
-      :toxicity: 8
-  history: {}
-AntelopeQuantify#4895: !ruby/object:Player
-  id: AntelopeQuantify#4895
-  name: AntelopeQuantify
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Damage
-    :second: Support
-    :tank: 1061
-    :damage: 4085
-    :support: 658
+    :tank: 3365
+    :damage: 1216
+    :support: 2422
   dossier:
     :endorsed:
       :punctual: 0
-      :high_skill: 0
+      :high_skill: 33
       :positive: 0
       :positivity: 38
     :reported:
-      :forfeits: 43
-      :low_skill: 16
-      :toxicity: 34
+      :forfeits: 27
+      :low_skill: 50
+      :toxicity: 48
   history: {}
-LeopardReboot#8451: !ruby/object:Player
-  id: LeopardReboot#8451
-  name: LeopardReboot
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Damage
-    :second: Support
-    :tank: 3175
-    :damage: 634
-    :support: 2186
-  dossier:
-    :endorsed:
-      :punctual: 6
-      :high_skill: 32
-      :positive: 0
-      :positivity: 15
-    :reported:
-      :forfeits: 45
-      :low_skill: 32
-      :toxicity: 44
-  history: {}
-RaccoonCopy#4662: !ruby/object:Player
-  id: RaccoonCopy#4662
-  name: RaccoonCopy
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Tank
-    :second: Support
-    :tank: 2060
-    :damage: 4477
-    :support: 1626
-  dossier:
-    :endorsed:
-      :punctual: 0
-      :high_skill: 21
-      :positive: 0
-      :positivity: 37
-    :reported:
-      :forfeits: 44
-      :low_skill: 44
-      :toxicity: 20
-  history: {}
-DuckTransmit#4514: !ruby/object:Player
-  id: DuckTransmit#4514
-  name: DuckTransmit
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Support
-    :second: Damage
-    :tank: 1707
-    :damage: 4073
-    :support: 3108
-  dossier:
-    :endorsed:
-      :punctual: 1
-      :high_skill: 8
-      :positive: 0
-      :positivity: 34
-    :reported:
-      :forfeits: 25
-      :low_skill: 33
-      :toxicity: 49
-  history: {}
-AntCalculate#2580: !ruby/object:Player
-  id: AntCalculate#2580
-  name: AntCalculate
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Tank
-    :second: Support
-    :tank: 4224
-    :damage: 2004
-    :support: 3623
-  dossier:
-    :endorsed:
-      :punctual: 35
-      :high_skill: 40
-      :positive: 0
-      :positivity: 13
-    :reported:
-      :forfeits: 11
-      :low_skill: 9
-      :toxicity: 32
-  history: {}
-FerretBackup#5261: !ruby/object:Player
-  id: FerretBackup#5261
-  name: FerretBackup
+SheepReboot#4153: !ruby/object:Player
+  id: SheepReboot#4153
+  name: SheepReboot
   roles:
     :options:
     - Tank
@@ -1473,599 +1065,47 @@ FerretBackup#5261: !ruby/object:Player
     - Support
     :preferred: Tank
     :second: Damage
-    :tank: 3937
-    :damage: 562
-    :support: 2071
-  dossier:
-    :endorsed:
-      :punctual: 28
-      :high_skill: 47
-      :positive: 0
-      :positivity: 36
-    :reported:
-      :forfeits: 46
-      :low_skill: 44
-      :toxicity: 7
-  history: {}
-HornetTransmit#1835: !ruby/object:Player
-  id: HornetTransmit#1835
-  name: HornetTransmit
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Tank
-    :second: Support
-    :tank: 1374
-    :damage: 1320
-    :support: 945
+    :tank: 3649
+    :damage: 1581
+    :support: 4035
   dossier:
     :endorsed:
       :punctual: 17
-      :high_skill: 7
+      :high_skill: 14
       :positive: 0
-      :positivity: 15
-    :reported:
-      :forfeits: 25
-      :low_skill: 2
-      :toxicity: 50
-  history: {}
-OxOverride#7915: !ruby/object:Player
-  id: OxOverride#7915
-  name: OxOverride
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Tank
-    :second: Support
-    :tank: 3598
-    :damage: 2900
-    :support: 4469
-  dossier:
-    :endorsed:
-      :punctual: 5
-      :high_skill: 47
-      :positive: 0
-      :positivity: 32
-    :reported:
-      :forfeits: 17
-      :low_skill: 28
-      :toxicity: 44
-  history: {}
-CoyoteReboot#3074: !ruby/object:Player
-  id: CoyoteReboot#3074
-  name: CoyoteReboot
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Support
-    :second: Tank
-    :tank: 1150
-    :damage: 1607
-    :support: 2468
-  dossier:
-    :endorsed:
-      :punctual: 5
-      :high_skill: 41
-      :positive: 0
-      :positivity: 41
-    :reported:
-      :forfeits: 31
-      :low_skill: 12
-      :toxicity: 14
-  history: {}
-MallardBypass#8475: !ruby/object:Player
-  id: MallardBypass#8475
-  name: MallardBypass
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Support
-    :second: Tank
-    :tank: 3137
-    :damage: 3271
-    :support: 2916
-  dossier:
-    :endorsed:
-      :punctual: 5
-      :high_skill: 34
-      :positive: 0
-      :positivity: 41
-    :reported:
-      :forfeits: 11
-      :low_skill: 35
-      :toxicity: 23
-  history: {}
-GnatGenerate#1970: !ruby/object:Player
-  id: GnatGenerate#1970
-  name: GnatGenerate
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Damage
-    :second: Support
-    :tank: 1660
-    :damage: 3200
-    :support: 979
-  dossier:
-    :endorsed:
-      :punctual: 15
-      :high_skill: 22
-      :positive: 0
-      :positivity: 30
+      :positivity: 47
     :reported:
       :forfeits: 6
-      :low_skill: 29
-      :toxicity: 41
+      :low_skill: 22
+      :toxicity: 11
   history: {}
-YakNavigate#9570: !ruby/object:Player
-  id: YakNavigate#9570
-  name: YakNavigate
+GooseReboot#6919: !ruby/object:Player
+  id: GooseReboot#6919
+  name: GooseReboot
   roles:
     :options:
     - Tank
     - Damage
     - Support
-    :preferred: Support
-    :second: Tank
-    :tank: 565
-    :damage: 3173
-    :support: 1184
-  dossier:
-    :endorsed:
-      :punctual: 15
-      :high_skill: 20
-      :positive: 0
-      :positivity: 48
-    :reported:
-      :forfeits: 13
-      :low_skill: 33
-      :toxicity: 36
-  history: {}
-WeaselOverride#7298: !ruby/object:Player
-  id: WeaselOverride#7298
-  name: WeaselOverride
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Tank
+    :preferred: Damage
     :second: Support
-    :tank: 762
-    :damage: 2608
-    :support: 4207
+    :tank: 4239
+    :damage: 3065
+    :support: 2270
   dossier:
     :endorsed:
-      :punctual: 16
-      :high_skill: 16
+      :punctual: 3
+      :high_skill: 0
       :positive: 0
       :positivity: 41
     :reported:
-      :forfeits: 36
-      :low_skill: 25
-      :toxicity: 0
-  history: {}
-BeetleOverride#3925: !ruby/object:Player
-  id: BeetleOverride#3925
-  name: BeetleOverride
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Support
-    :second: Tank
-    :tank: 2438
-    :damage: 2799
-    :support: 2376
-  dossier:
-    :endorsed:
-      :punctual: 21
-      :high_skill: 23
-      :positive: 0
-      :positivity: 48
-    :reported:
-      :forfeits: 19
-      :low_skill: 35
-      :toxicity: 39
-  history: {}
-MinnowOverride#7175: !ruby/object:Player
-  id: MinnowOverride#7175
-  name: MinnowOverride
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Tank
-    :second: Damage
-    :tank: 1360
-    :damage: 2168
-    :support: 627
-  dossier:
-    :endorsed:
-      :punctual: 27
-      :high_skill: 39
-      :positive: 0
-      :positivity: 20
-    :reported:
-      :forfeits: 27
-      :low_skill: 35
-      :toxicity: 17
-  history: {}
-PorpoiseCalculate#2648: !ruby/object:Player
-  id: PorpoiseCalculate#2648
-  name: PorpoiseCalculate
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Support
-    :second: Damage
-    :tank: 4311
-    :damage: 870
-    :support: 1716
-  dossier:
-    :endorsed:
-      :punctual: 45
-      :high_skill: 17
-      :positive: 0
-      :positivity: 7
-    :reported:
-      :forfeits: 43
-      :low_skill: 29
-      :toxicity: 47
-  history: {}
-JellyfishSynthesize#2992: !ruby/object:Player
-  id: JellyfishSynthesize#2992
-  name: JellyfishSynthesize
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Damage
-    :second: Tank
-    :tank: 1139
-    :damage: 2854
-    :support: 3939
-  dossier:
-    :endorsed:
-      :punctual: 26
-      :high_skill: 12
-      :positive: 0
-      :positivity: 1
-    :reported:
-      :forfeits: 16
-      :low_skill: 43
-      :toxicity: 47
-  history: {}
-SharkBackup#3967: !ruby/object:Player
-  id: SharkBackup#3967
-  name: SharkBackup
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Support
-    :second: Tank
-    :tank: 3108
-    :damage: 4183
-    :support: 1956
-  dossier:
-    :endorsed:
-      :punctual: 38
-      :high_skill: 11
-      :positive: 0
-      :positivity: 3
-    :reported:
-      :forfeits: 36
-      :low_skill: 41
-      :toxicity: 44
-  history: {}
-SharkReboot#7651: !ruby/object:Player
-  id: SharkReboot#7651
-  name: SharkReboot
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Support
-    :second: Tank
-    :tank: 1259
-    :damage: 1406
-    :support: 3169
-  dossier:
-    :endorsed:
-      :punctual: 11
-      :high_skill: 30
-      :positive: 0
-      :positivity: 8
-    :reported:
-      :forfeits: 34
-      :low_skill: 31
-      :toxicity: 29
-  history: {}
-OxBackup#6771: !ruby/object:Player
-  id: OxBackup#6771
-  name: OxBackup
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Support
-    :second: Tank
-    :tank: 2344
-    :damage: 4495
-    :support: 1323
-  dossier:
-    :endorsed:
-      :punctual: 49
-      :high_skill: 15
-      :positive: 0
-      :positivity: 42
-    :reported:
-      :forfeits: 13
-      :low_skill: 49
-      :toxicity: 48
-  history: {}
-TortoiseIndex#7018: !ruby/object:Player
-  id: TortoiseIndex#7018
-  name: TortoiseIndex
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Damage
-    :second: Tank
-    :tank: 1059
-    :damage: 4562
-    :support: 623
-  dossier:
-    :endorsed:
-      :punctual: 29
-      :high_skill: 19
-      :positive: 0
-      :positivity: 38
-    :reported:
-      :forfeits: 19
-      :low_skill: 6
-      :toxicity: 14
-  history: {}
-WhaleCopy#3748: !ruby/object:Player
-  id: WhaleCopy#3748
-  name: WhaleCopy
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Tank
-    :second: Damage
-    :tank: 3370
-    :damage: 1451
-    :support: 896
-  dossier:
-    :endorsed:
-      :punctual: 19
-      :high_skill: 22
-      :positive: 0
-      :positivity: 7
-    :reported:
-      :forfeits: 49
-      :low_skill: 6
-      :toxicity: 28
-  history: {}
-LionBackup#7622: !ruby/object:Player
-  id: LionBackup#7622
-  name: LionBackup
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Damage
-    :second: Tank
-    :tank: 3477
-    :damage: 1124
-    :support: 3022
-  dossier:
-    :endorsed:
-      :punctual: 35
-      :high_skill: 2
-      :positive: 0
-      :positivity: 12
-    :reported:
-      :forfeits: 29
-      :low_skill: 30
-      :toxicity: 19
-  history: {}
-LeopardTransmit#3691: !ruby/object:Player
-  id: LeopardTransmit#3691
-  name: LeopardTransmit
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Support
-    :second: Tank
-    :tank: 2038
-    :damage: 1617
-    :support: 657
-  dossier:
-    :endorsed:
-      :punctual: 24
-      :high_skill: 49
-      :positive: 0
-      :positivity: 8
-    :reported:
-      :forfeits: 48
-      :low_skill: 20
-      :toxicity: 1
-  history: {}
-MallardBackup#3035: !ruby/object:Player
-  id: MallardBackup#3035
-  name: MallardBackup
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Tank
-    :second: Support
-    :tank: 2748
-    :damage: 2154
-    :support: 1646
-  dossier:
-    :endorsed:
-      :punctual: 32
-      :high_skill: 32
-      :positive: 0
-      :positivity: 3
-    :reported:
-      :forfeits: 23
-      :low_skill: 47
-      :toxicity: 27
-  history: {}
-TurtleGenerate#9494: !ruby/object:Player
-  id: TurtleGenerate#9494
-  name: TurtleGenerate
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Tank
-    :second: Damage
-    :tank: 781
-    :damage: 738
-    :support: 3450
-  dossier:
-    :endorsed:
-      :punctual: 50
-      :high_skill: 35
-      :positive: 0
-      :positivity: 15
-    :reported:
-      :forfeits: 17
-      :low_skill: 28
-      :toxicity: 45
-  history: {}
-ButterflyTransmit#9203: !ruby/object:Player
-  id: ButterflyTransmit#9203
-  name: ButterflyTransmit
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Damage
-    :second: Tank
-    :tank: 3286
-    :damage: 4495
-    :support: 1649
-  dossier:
-    :endorsed:
-      :punctual: 28
-      :high_skill: 48
-      :positive: 0
-      :positivity: 30
-    :reported:
       :forfeits: 8
-      :low_skill: 44
-      :toxicity: 29
+      :low_skill: 15
+      :toxicity: 41
   history: {}
-BeeCopy#4661: !ruby/object:Player
-  id: BeeCopy#4661
-  name: BeeCopy
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Support
-    :second: Damage
-    :tank: 2155
-    :damage: 3068
-    :support: 2976
-  dossier:
-    :endorsed:
-      :punctual: 34
-      :high_skill: 4
-      :positive: 0
-      :positivity: 40
-    :reported:
-      :forfeits: 4
-      :low_skill: 4
-      :toxicity: 27
-  history: {}
-GoldfishIndex#4194: !ruby/object:Player
-  id: GoldfishIndex#4194
-  name: GoldfishIndex
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Support
-    :second: Tank
-    :tank: 2780
-    :damage: 2920
-    :support: 3917
-  dossier:
-    :endorsed:
-      :punctual: 20
-      :high_skill: 48
-      :positive: 0
-      :positivity: 5
-    :reported:
-      :forfeits: 24
-      :low_skill: 28
-      :toxicity: 23
-  history: {}
-WeaselQuantify#6015: !ruby/object:Player
-  id: WeaselQuantify#6015
-  name: WeaselQuantify
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Support
-    :second: Tank
-    :tank: 1219
-    :damage: 3905
-    :support: 3646
-  dossier:
-    :endorsed:
-      :punctual: 9
-      :high_skill: 31
-      :positive: 0
-      :positivity: 16
-    :reported:
-      :forfeits: 12
-      :low_skill: 0
-      :toxicity: 37
-  history: {}
-GiraffeBypass#1911: !ruby/object:Player
-  id: GiraffeBypass#1911
-  name: GiraffeBypass
+HerringHack#9118: !ruby/object:Player
+  id: HerringHack#9118
+  name: HerringHack
   roles:
     :options:
     - Tank
@@ -2073,232 +1113,17 @@ GiraffeBypass#1911: !ruby/object:Player
     - Support
     :preferred: Tank
     :second: Damage
-    :tank: 4016
-    :damage: 2260
-    :support: 3133
-  dossier:
-    :endorsed:
-      :punctual: 36
-      :high_skill: 42
-      :positive: 0
-      :positivity: 13
-    :reported:
-      :forfeits: 50
-      :low_skill: 30
-      :toxicity: 45
-  history: {}
-SquirrelCompress#1136: !ruby/object:Player
-  id: SquirrelCompress#1136
-  name: SquirrelCompress
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Damage
-    :second: Support
-    :tank: 3385
-    :damage: 4332
-    :support: 4550
-  dossier:
-    :endorsed:
-      :punctual: 31
-      :high_skill: 22
-      :positive: 0
-      :positivity: 40
-    :reported:
-      :forfeits: 36
-      :low_skill: 3
-      :toxicity: 43
-  history: {}
-AntCalculate#3830: !ruby/object:Player
-  id: AntCalculate#3830
-  name: AntCalculate
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Damage
-    :second: Support
-    :tank: 1493
-    :damage: 1977
-    :support: 2598
-  dossier:
-    :endorsed:
-      :punctual: 32
-      :high_skill: 19
-      :positive: 0
-      :positivity: 29
-    :reported:
-      :forfeits: 47
-      :low_skill: 30
-      :toxicity: 23
-  history: {}
-EagleProgram#9598: !ruby/object:Player
-  id: EagleProgram#9598
-  name: EagleProgram
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Damage
-    :second: Tank
-    :tank: 1064
-    :damage: 3589
-    :support: 1606
-  dossier:
-    :endorsed:
-      :punctual: 12
-      :high_skill: 12
-      :positive: 0
-      :positivity: 49
-    :reported:
-      :forfeits: 45
-      :low_skill: 31
-      :toxicity: 34
-  history: {}
-TroutReboot#1143: !ruby/object:Player
-  id: TroutReboot#1143
-  name: TroutReboot
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Support
-    :second: Tank
-    :tank: 3641
-    :damage: 2785
-    :support: 3105
+    :tank: 1807
+    :damage: 3202
+    :support: 3626
   dossier:
     :endorsed:
       :punctual: 21
-      :high_skill: 1
+      :high_skill: 41
       :positive: 0
       :positivity: 25
     :reported:
-      :forfeits: 27
-      :low_skill: 32
-      :toxicity: 48
-  history: {}
-WaspBypass#5133: !ruby/object:Player
-  id: WaspBypass#5133
-  name: WaspBypass
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Damage
-    :second: Tank
-    :tank: 1533
-    :damage: 2492
-    :support: 2503
-  dossier:
-    :endorsed:
-      :punctual: 1
-      :high_skill: 47
-      :positive: 0
-      :positivity: 31
-    :reported:
-      :forfeits: 13
-      :low_skill: 33
-      :toxicity: 25
-  history: {}
-MammothGenerate#5209: !ruby/object:Player
-  id: MammothGenerate#5209
-  name: MammothGenerate
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Support
-    :second: Damage
-    :tank: 3899
-    :damage: 2244
-    :support: 3005
-  dossier:
-    :endorsed:
-      :punctual: 2
-      :high_skill: 23
-      :positive: 0
-      :positivity: 17
-    :reported:
-      :forfeits: 11
-      :low_skill: 8
-      :toxicity: 21
-  history: {}
-HornetGenerate#3579: !ruby/object:Player
-  id: HornetGenerate#3579
-  name: HornetGenerate
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Support
-    :second: Damage
-    :tank: 2126
-    :damage: 4303
-    :support: 1681
-  dossier:
-    :endorsed:
-      :punctual: 11
-      :high_skill: 24
-      :positive: 0
-      :positivity: 46
-    :reported:
-      :forfeits: 38
-      :low_skill: 8
-      :toxicity: 15
-  history: {}
-KangarooReboot#3285: !ruby/object:Player
-  id: KangarooReboot#3285
-  name: KangarooReboot
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Support
-    :second: Tank
-    :tank: 1669
-    :damage: 1237
-    :support: 3039
-  dossier:
-    :endorsed:
-      :punctual: 47
-      :high_skill: 47
-      :positive: 0
-      :positivity: 22
-    :reported:
-      :forfeits: 16
-      :low_skill: 24
-      :toxicity: 46
-  history: {}
-xxKeefer#1943: !ruby/object:Player
-  id: xxKeefer#1943
-  name: Keefer
-  roles:
-    :options:
-    - Tank
-    - Damage
-    - Support
-    :preferred: Tank
-    :second: Damage
-    :tank: 3000
-    :damage: 2200
-    :support: 1800
-  dossier:
-    :endorsed:
-      :punctual: 0
-      :high_skill: 0
-      :positive: 0
-    :reported:
-      :forfeits: 0
-      :low_skill: 0
-      :toxicity: 0
+      :forfeits: 1
+      :low_skill: 48
+      :toxicity: 34
   history: {}
