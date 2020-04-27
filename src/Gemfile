@@ -4,6 +4,6 @@ source "https://rubygems.org"
 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
+gem 'faker', '~> 2.11'
 gem 'text-table', '~> 1.2', '>= 1.2.4'
 gem 'tty-prompt', '~> 0.21.0'
-gem 'faker', '~> 2.11'

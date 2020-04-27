@@ -96,13 +96,11 @@ I am interested in the **Matches** so i select "Display Matches". When I do i am
 
 ## **Implementation Plan**
 
-Summary of implementation plan. Include the following
+All of my planning was done using Trello.
 
-- **outlines** how each feature will be implemented and a checklist of tasks for each feature
-- prioritise the implementation of different features, or checklist items within a feature
-- provide a deadline, duration or other time indicator for each feature or checklist/checklist-item
+I put a link to my [Trello](https://trello.com/b/07nO0TFo/tournament-planner-for-overwatch) here and screenshot below
 
-I put a link to my Trello here and screenshot below
+![Trello Screencap](docs/trello.png)
 
 
 ------
