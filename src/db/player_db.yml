@@ -14399,3 +14399,26 @@ DonkeyIndex#3209: !ruby/object:Player
       :low_skill: 11
       :toxicity: 14
   history: {}
+xxKeefer#1943: !ruby/object:Player
+  id: xxKeefer#1943
+  name: Keefer
+  roles:
+    :options:
+    - Tank
+    - Damage
+    - Support
+    :preferred: Tank
+    :second: Damage
+    :tank: 3000
+    :damage: 2000
+    :support: 1800
+  dossier:
+    :endorsed:
+      :punctual: 0
+      :high_skill: 0
+      :positive: 0
+    :reported:
+      :forfeits: 0
+      :low_skill: 0
+      :toxicity: 0
+  history: {}
